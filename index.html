@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Effects of Bushfires</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap">    
+</head>
+<body> 
+    <script src="script.js"></script>
+    <audio id="track_1" src="campfire-1.mp3" loop="loop"></audio>
+
+    <div id="muteToggle"> 
+        <img id="mute" src="sound on.png" onclick="mute()">
+        <img id="unMute" src="mute.png" onclick="unMute()"> 
+    </div>
+    <div id="openingScene"> 
+        <img id="bushBackground" src="burnt bush.png">
+        <img id="green" src="green-leaf.gif">
+        <img id="red" src="red-fire.gif" onclick="loadContent1()">
+    </div>
+    <div id="introduction"> 
+        <img id="flame"src="fire-gif.gif" style="width:70%";>
+        <div id="heading"><h1>The Effects of Bushfires</h1></div>      
+    </div>    
+    <div id="line"></div>  
+    <div id="section1">
+        <div id="left1" onscroll="divScroll()">
+            <div class="scrollbar" id="style-3">
+				<div class="force-overflow"></div>
+			</div>
+            <div id="line1">
+                <h2><br><br><br>Positive Impacts of Bushfires</h2>
+                    <p>
+                        <br><br> Bushfires trigger natural process essential to the environmental ecology for seed gemination and bush life regeneration.
+                        <br><br> The fire clears it clears thick undergrowth and opens up the canopy so sunlight can reach the forest floor, encouraging the germination and regrowth of native vegetation.
+                        <br><br>The remnants of burnt trees, with hollowed out logs, can also offer attractive habitats for birds and mammals seeking shelter and nesting. 
+                        <br><br> But recently, humanity has increased the severity and length of the bushfire season. So much so that it is more destructive than productive.<br><br><br><br><br>
+                    </p> 
+            </div>
+        </div>
+        <div id="right1">
+            <img id="flora1" src="flora 5.jpg">
+            <img id="flora2" src="flora 3.png">
+            <img id="flora3" src="flora 1.jpg">
+            <img id="flora4" src="flora 2.jpg">
+            <img id="flora5" src="flora 4.png">
+        </div>
+    </div>   
+    <div id="section2">
+        <div id="box2">
+            <h2>Negative Effects on Flora and Fauna</h2>
+            <img class="buttonOver" src ="endangermenthover.png" onclick="loadContent2()">
+            <img class="buttonOver" src="deathhover.png"onclick="loadContent3()">
+            <img class="buttonOver" src="ecosystemhover.png" onclick="loadContent4()">
+            <img class="buttonOver" src="glacierhover.png"onclick="loadContent5()">
+            
+            <div  id="endangermentPage">
+                <h2 class="headings">Endangerment</h2>
+                <p class="page"id="endangermentText">Bushfires put scarce species at risk of extinction or endangerment, especially animals that cannot fly. Even if the animals are not killed in the fire, they will still struggle for food and shelter for a few months afterwards.</p>
+                <img class="right2"id="fauna1" src="possum.jpg">
+            </div>
+            <div id="deathPage">
+                <h2 class="headings">Death</h2>
+                <p class="page"id="deathText">3 Billion animals were killed in the Australian fires during 2019-2020. Other ecosystems were also impacted indirectly, smoke and ash can pollute water sources,removing feeding and breeding areas of aquatic animals and clog the gills of fish causing them to suffocate.</p>
+                <img class="right2"id="fauna2" src="graph.jpeg">
+            </div>
+            <div id="ecosystemPage">
+                <h2 class="headings">Ecosystem Change</h2>
+                <p class="page"id="ecosystemText">In these conditions, it becomes survival of the fittest with such scarce food and shelter after the fires. The top predators cull out those lower on the food chain and whole habitats can be destroyed which causes irreversible damage to the ecosystems in place.</p>
+                <img class="right2"id="fauna3" src="kangaroos.jpg">
+            </div> 
+            <div id="glaciersPage">
+                <h2 class="headings">Influence on other Places</h2>
+                <p class="page"id="glaciersText">Ash from bushfires can travel long distances and affect other habitats such as the glaciers in New Zealand, smoke from bushfires in Australia travelled to New Zealand, coating the glaciers in a brown layer which accelerates the melting process.</p>
+                <img class="right2" id="fauna4" src="glacier.jpg">
+            </div>
+        </div>
+    </div> 
+    <div id="section3">
+        <p id="linked"><a href="https://www.climatecouncil.org.au/">Visit Climate Council to Take Action</a></p>
+        <h1 id="heading3">Climate Change Feedback Loop</h1>
+        <div class="container">
+            <div class="climateText" id="change1"> 
+            <p>Climate change and these mega fires we have been seeing more recently go hand in hand, the rise in temperature means less rainfall, dryer environments which means more fuel for the fires and a longer fire period. </p>
+            </div>
+            <div class="climateImg" id="change2">
+                <img id="climate1" src="climate1.png">
+            </div>
+            <div class="climateText" id="change3"> 
+                <p>These mega fires release too much CO2 for the bush to cope with, most fire emissions are absorbed by the regrowth of the bush, but lately these fires have been too brutal, and it is expected that the emissions will never be absorbed.</p>
+            </div>
+            <div class="climateImg" id="change4">
+                <img id="climate4Img" src="climate2.png">
+            </div>
+            <div class="climateText" id="change5">
+                <p>In a typical Australian year, 104 million metric tons are emitted through the burning of fossil fuels. In 2019-2020 the bushfires along with droughts emitted 186 million tons of carbon, more than doubling Australians carbon emissions for that year.</p>
+            </div>
+            <div class="climateImg" id="change6">
+                <img id="climate6Img" src="climate3.jpg">
+            </div>
+            <div class="climateText" id="change7">
+                <p>
+                    This additional emissions only exacerbates the fire conditions creating a feedback loop of mega fires that will only get worse in the future.</p>
+            </div>
+            <div class="climateImg" id="change8">
+                <img id="climate8Img" src="climate4.jpg">
+            </div>
+     </div>
+
+
+
+    
+
+    </div>
+</body>
+</html>

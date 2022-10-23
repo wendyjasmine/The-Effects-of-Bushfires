@@ -1,0 +1,348 @@
+* {
+    padding:0;
+    margin:0;
+}
+/* allows me to hide the scroll bar while its still functional */
+body::-webkit-scrollbar{
+    display:none;
+}
+
+body {  
+    background-size:100vw;
+    position: relative;
+    background-color: black;
+    background-image: url("treebark.png");
+    background-repeat: repeat;
+    z-index: -10;
+    height: 4650px;	
+    overflow: hidden; 
+} 
+
+/* connecting line */
+#line {
+    z-index: -10;  
+    background-color:black;
+    height: 3750px;
+    width: 9px;
+    position: absolute;
+    transform: translate(50vw, -5px);
+}
+
+#bushBackground {
+    z-index: 100;
+    position: absolute;
+    width:100%;
+    height:auto;
+}
+
+#introduction {
+    display: none;
+    font-family: 'Oswald' , sans-serif;
+    text-align: center;
+}
+
+#flame {
+    
+    position: relative; 
+   border-radius:50px;
+   transform: translateX(21.5%)
+}
+
+#heading {
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -400%);
+    color:rgb(0, 0, 0);
+    font-size:35px;
+}
+
+/* mute controls  */
+#mute, #unMute {
+    z-index: 110;
+    position: absolute;
+    width: 80px;
+    height: auto;
+    transform: translate(+50%, +50%);
+    position: fixed;
+}
+
+#unMute {
+    display: none;
+    transform: translate(+50%, +35%);
+    position:fixed;
+}
+
+/* staring button */
+#green, #red {
+    z-index: 110;
+    position: absolute;
+    width: 250px;
+    height:auto;
+    transform: translate(+69vw, +36vh);
+} 
+
+#red {
+    display: none;
+}
+    
+#green:hover+#red {
+    display: inline;
+}
+
+#green:hover {
+    opacity: 0;
+}
+
+/* first section */
+  #section1 {
+    background-color: black;
+    width: 80vw;
+    height: 700px;
+    margin: auto;
+    border-radius:50px;
+    transform: translateY(+30vw);
+    
+} 
+/* left side */
+#left1 {
+    width:40vw;
+    height: 700px;
+    overflow-y: scroll;
+    font-size: 32px;
+    color: antiquewhite;
+    font-family: 'Oswald' , 'ExtraLight 200', sans-serif;
+    text-align: center;
+    line-height: 2;
+
+}
+/* customises the scrollbar in section 1 */
+#left1::-webkit-scrollbar
+{
+	width: 10px;
+	background-color:rgb(66, 66, 66);
+}
+
+#left1::-webkit-scrollbar-thumb
+{
+	background-color:darkred;
+    border-radius: 30px;
+}
+
+
+/* right side along with picture positions */
+#right1 {
+    width:40vw;
+    height: 700px;
+}
+
+#flora1 {
+    width: 47%;
+    position: absolute;
+    transform: translate(110%, -640px);
+    transition-duration: 1s;
+}
+
+#flora2 {
+    width:45%;
+    position: absolute;
+    transform: translate(117%, -665px);
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+#flora3 {
+    width:37%;
+    position: absolute;
+    transform: translate(155%, -690px);
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+#flora4 {
+    width:45%;
+    position: absolute;
+    transform: translate(117%, -545px);
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+#flora5 {
+    width: 45%;
+    position: absolute;
+    transform: translate(117%, -500px);
+    opacity:0;
+    transition-duration: 1s;
+}
+/* section 2 */
+#section2 {
+    background-color: black;
+    width: 80vw;
+    height: 700px;
+    margin: auto;
+    border-radius:50px;
+    transform: translateY(+70vw);
+}   
+#box2 {
+    margin: auto;
+    text-align: center;
+    color:antiquewhite;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    padding-top: 15px;
+
+}
+.buttonOver{
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    position: relative;
+    transition-duration: 0.2s;
+}
+
+
+.buttonOver:hover{
+    opacity: 0.5;
+    transition-duration: 0.2s;
+}
+
+
+.page {
+    width: 30vw;
+    height: 400px;
+    padding: 50px;
+    position: absolute;
+}
+.headings {
+    position: relative;
+    text-align:center;
+    margin: auto;
+
+}
+#deathPage, #glaciersPage, #ecosystemPage {
+    display: none;
+}
+/* images */
+#fauna1 {
+    width: 500px;
+    height: auto;
+    transform: translate(+50%, +50px);
+}
+#fauna2 {
+    width:400px;
+    height: auto;
+    transform: translateX(+70%);
+}
+#fauna3 {
+    width:500px;
+    height: auto;
+    transform: translate(+50%,+50px)
+}
+#fauna4 {
+    width:600px;
+    height: auto;
+    transform: translate(+40%,+30px)
+}
+/* section 3 */
+#section3 {
+    background-color: black;
+    width: 80vw;
+    height: 700px;
+    margin: auto;
+    border-radius:50px;
+    transform: translateY(+110vw);
+    overflow-x:auto;
+    overflow-y:hidden;
+
+}
+
+#linked {
+    z-index:50;
+    color:antiquewhite;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    transform:translateX(695%);
+    position:absolute;
+}
+#linked:hover {
+    color:darkred;
+}
+#heading3 {
+    margin: auto;
+    text-align: center;
+    color:antiquewhite;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    padding-top: 15px;   
+}
+.container {
+    font-size: 32px;
+    color:antiquewhite;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* customising the x-axis scrollbar */
+#section3::-webkit-scrollbar {
+	width: 10px;
+	background-color:rgb(66, 66, 66);
+}
+
+#section3::-webkit-scrollbar-thumb
+{
+	background-color:darkred;
+    border-radius: 30px;
+}
+/* class for textsize and setting */
+.climateText {
+    float: left;
+    display:inline;
+    text-align: center;
+    width: 38vw;
+    height: 400px;
+    padding:1vw;
+    padding-top:150px;
+    position: absolute;
+}
+/* class for Images */
+.climateImg {
+    float: left;
+    display:inline;
+    text-align: center;
+    width: 38vw;
+    padding:1vw;
+    position: absolute;
+}
+#climate4Img {
+    width:90%;
+}
+#climate6Img {
+    width:85%;
+}
+#climate8Img {
+    width:80%;
+}
+#climate1 {
+    width:60%;
+}
+#change2 {
+    transform:translate(100%);
+}
+#change3 {
+    transform:translateX(200%);
+}
+#change4 {
+    transform: translate(300%, +100px);
+}
+#change5 {
+    transform: translateX(400%);
+}
+#change6 {
+    transform:translate(500%, +100px);
+}
+#change7 {
+    transform: translate(600%,+20px);
+}
+#change8 {
+    transform:translate(700%, +20px);
+}
+
